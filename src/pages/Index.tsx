@@ -48,10 +48,12 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-luxury-black/95 backdrop-blur-sm border-b border-gold/20">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">Н</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/img/443f16d6-8d09-4a71-83be-10f864a5677c.jpg" 
+                alt="НЕФТЬ логотип"
+                className="w-10 h-10 object-contain"
+              />
               <h1 className="text-2xl font-bold text-gold">НЕФТЬ</h1>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -347,10 +349,12 @@ export default function Index() {
       <footer className="bg-luxury-black border-t border-gold/20 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">Н</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4 md:mb-0">
+              <img 
+                src="/img/443f16d6-8d09-4a71-83be-10f864a5677c.jpg" 
+                alt="НЕФТЬ логотип"
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-2xl font-bold text-gold">НЕФТЬ</span>
             </div>
             
