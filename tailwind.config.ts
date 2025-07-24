@@ -61,6 +61,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Sushi bar luxury colors
+				gold: {
+					DEFAULT: '#FFD700',
+					50: '#FFFDF0',
+					100: '#FFF9C4',
+					200: '#FFF282',
+					300: '#FFEB3B',
+					400: '#FFD700',
+					500: '#FFC107',
+					600: '#FF8F00',
+					700: '#F57C00',
+					800: '#E65100',
+					900: '#BF360C',
+				},
+				luxury: {
+					black: '#000000',
+					gold: '#FFD700',
+					white: '#FFFFFF',
+					gray: '#1A1A1A',
 				}
 			},
 			borderRadius: {
@@ -71,24 +91,48 @@ export default {
 			keyframes: {
 				'accordion-down': {
 					from: {
-						height: '0'
+						height: '0',
+						opacity: '0'
 					},
 					to: {
-						height: 'var(--radix-accordion-content-height)'
+						height: 'var(--radix-accordion-content-height)',
+						opacity: '1'
 					}
 				},
 				'accordion-up': {
 					from: {
-						height: 'var(--radix-accordion-content-height)'
+						height: 'var(--radix-accordion-content-height)',
+						opacity: '1'
 					},
 					to: {
-						height: '0'
+						height: '0',
+						opacity: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'scale-in': {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'slide-up': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'gold-glow': {
+					'0%, 100%': { boxShadow: '0 0 5px #FFD700' },
+					'50%': { boxShadow: '0 0 20px #FFD700, 0 0 30px #FFD700' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'scale-in': 'scale-in 0.2s ease-out',
+				'slide-up': 'slide-up 0.4s ease-out',
+				'gold-glow': 'gold-glow 2s ease-in-out infinite'
 			}
 		}
 	},
